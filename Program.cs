@@ -50,7 +50,7 @@ int SommaElementi(int[] array)
 
 // Programma principale
 
-//int[] array = { 2, 6, 7, 5, 3, 9 }; // array fornito nella consegna
+//int[] array = { 2, 6, 7, 5, 3, 9 };
 
 Console.Write($"\nInserisci la lunghezza dell'array: ");
 int arrayLength = Convert.ToInt32(Console.ReadLine());
@@ -64,19 +64,12 @@ for (int i = 0; i < arrayLength; i++)
 
 Console.WriteLine("\nArray originale:");
 StampaArray(array);
-
-//Console.WriteLine(Quadrato(2));
-
-int[] arrayQuadrato = ElevaArrayQuadrato(array);
-
-Console.WriteLine("\nArray al quadrato:");
-StampaArray(arrayQuadrato);
-
-Console.WriteLine("\nArray originale:");
-StampaArray(array);
-
 Console.Write("\nSomma array originale: ");
 Console.WriteLine(SommaElementi(array));
 
+
+int[] arrayQuadrato = ElevaArrayQuadrato(array);
+Console.WriteLine("\nArray al quadrato:");
+StampaArray(arrayQuadrato);
 Console.Write("\nSomma array al quadrato: ");
 Console.WriteLine(SommaElementi(arrayQuadrato));
